@@ -28,7 +28,7 @@ Users should be able to:
 ![Screenshot for Mobile View](/Mobile_view.png)
 ### Links
 
-- Live Site URL: [Frontend Mentor - Single price grid component]()
+- Live Site URL: [Frontend Mentor - Single price grid component](https://single-price-grid-component-pa.netlify.app)
 
 ## My process
 
@@ -45,5 +45,5 @@ This project allwoed me to learn the use of css grid and to take benifits out of
 
 ## Author
 
-- Website - [Frontend Mentor - Single price grid component]()
+- Website - [Frontend Mentor - Single price grid component](https://single-price-grid-component-pa.netlify.app)
 - Frontend Mentor - [@Priyanshu4206](https://www.frontendmentor.io/profile/Priyanshu4206)
