@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Single Price Grid Component</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Karla', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+    body {
+      min-height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .main {
+      margin: 1rem auto;
+      width: 50vw;
+      box-shadow: 0px 3px 40px -6px gray;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+
+    .box1 {
+      padding: 2rem;
+      background-color: white;
+    }
+
+    .box1 h2 {
+      margin: 1rem 0;
+      font-size: 1.4rem;
+      font-weight: 700;
+    }
+
+    .box1 p {
+      margin-bottom: 1rem;
+      color: hsl(218, 22%, 67%);
+    }
+
+    .box2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .box2 .items {
+      padding: 2rem;
+      color: hsl(204, 43%, 93%);
+    }
+
+    .item1 {
+      background-color: #2BB3B1;
+    }
+
+    .item2 {
+      background-color: #4ABEBD;
+    }
+
+    .item2 h3 {
+      font-size: 1.4rem;
+      font-weight: 700;
+    }
+
+    .price {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .cost {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin: 1rem;
+      margin-left: 0;
+    }
+
+    .time_period {
+      flex: 1;
+      font-size: 1rem;
+      font-weight: 400;
+      color: hsl(210, 3%, 73%);
+    }
+
+    .signup_btn {
+      background-color: greenyellow;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 3rem;
+      width: 100%;
+      margin-top: 2rem;
+      text-shadow: 1px 1px grey;
+    }
+
+    .item2 ul {
+      margin-top: 1rem;
+      list-style: none;
+    }
+
+    ul li {
+      font-size: 13px;
+      margin-top: 0.4rem;
+    }
+
+    .footer {
+      text-align: center;
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    @media(max-width:700px) {
+      .main {
+        width: 80vw;
+      }
+
+      .attribution,
+      .attribution a {
+        font-size: 3vw;
+      }
+
+      .box2 {
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: repeat(2, 1fr);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="main">
+      <div class="box1">
+        <h2 style="color: hsl(179, 62%, 43%);">
+          Join our community
+        </h2>
+        <h2 style="color: hsl(71, 73%, 54%);">
+          30-day, hassle-free money back guarantee
+        </h2>
+        <p>
+          Gain access to our full library of tutorials along with expert code reviews.
+          Perfect for any developers who are serious about honing their skills.
+        </p>
+      </div>
+      <div class="box2">
+        <div class="items item1">
+          <h3>
+            Monthly Subscription
+          </h3>
+          <div class="price">
+            <div class="cost">
+              &dollar;29
+            </div>
+            <div class="time_period">
+              per month
+            </div>
+          </div>
+          <div class="details">
+            Full access for less than &dollar;1 a day
+          </div>
+          <div class="signup_btn">
+            Sign Up
+          </div>
+        </div>
+        <div class="items item2">
+          <h3>
+            Why Us
+          </h3>
+          <ul>
+            <li>
+              Tutorials by industry experts
+            </li>
+            <li>
+              Peer &amp; expert code review
+            </li>
+            <li>
+              Coding exercises
+            </li>
+            <li>
+              Access to our GitHub repos
+            </li>
+            <li>
+              Community forum
+            </li>
+            <li>
+              Flashcard decks
+            </li>
+            <li>
+              New videos every week
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://www.frontendmentor.io/profile/Priyanshu4206">Priyanshu Agarwal</a>.
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>
